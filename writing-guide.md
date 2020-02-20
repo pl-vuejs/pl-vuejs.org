@@ -1,17 +1,17 @@
 # Vue Docs Writing Guide
 
-Writing documentation is an exercise in empathy. We're not describing an objective reality - the source code already does that. Our job is to help shape the relationship between users and the Vue ecosystem. This ever-evolving guide provides some rules and recommendations on how to do that consistently within the Vue ecosystem.
+Pisanie dokumentacji jest ćwiczeniem z empatii. Nie opisujemy obiektywnej rzeczywistości - kod źródłowy już to robi. Naszym zadaniem jest pomoc w kształtowaniu relacji między użytkownikami a ekosystemem Vue'a. Ten stale rozwijający się przewodnik zawiera pewne zasady i zalecenia, jak to zrobić w sposób spójny w ramach ekosystemu Vue.
 
-## Principles
+## Zasady
 
-- **A feature doesn't exist until it's well documented.**
-- **Respect users' cognitive capacity (i.e. brain power).** When a user starts reading, they begin with a certain amount of limited brain power and when they run out, they stop learning.
-  - Cognitive capacity is **depleted faster** by complex sentences, having to learn more than one concept at a time, and abstract examples that don't directly relate to a user's work.
-  - Cognitive capacity is **depleted more slowly** when we help them feel consistently smart, powerful, and curious. Breaking things down into digestible pieces and minding the flow of the document can help keep them in this state.
-- **Always try to see from the user's perspective.** When we understand something thoroughly, it becomes obvious to us. This is called _the curse of knowledge_. In order to write good documentation, try to remember what you first needed to know when learning this concept. What jargon did you need to learn? What did you misunderstand? What took a long time to really grasp? Good documentation meets users where they are. It can be helpful to practice explaining the concept to people in person before
-- **Describe the _problem_ first, then the solution.** Before showing how a feature works, it's important to explain why it exists. Otherwise, users won't have the context to know if this information is important to them (is it a problem they experience?) or what prior knowledge/experience to connect it to.
-- **While writing, don't be afraid to ask questions**, _especially_ if you're afraid they might be "dumb". Being vulnerable is hard, but it's the only way for us to more fully understand what we need to explain.
-- **Be involved in feature discussions.** The best APIs come from documentation-driven development, where we build features that are easy to explain, rather than trying to figure out how to explain them later. Asking questions (especially "dumb" questions) earlier often helps reveal confusions, inconsistencies, and problematic behavior before a breaking change would be required to fix them.
+- **Alement nie istnieje, dopóki nie jest dobrze udokumentowany.**
+- **Chodzi o zdolności poznawcze użytkownika (tzn. moc mózgu).** Kiedy użytkownik zaczyna czytać, zaczyna od pewnej ilości ograniczonej mocy mózgu, a kiedy się kończy, przestaje się uczyć.**
+  - Zdolności poznawcze są **szybciej zużywane** przez złożone zdania, konieczność uczenia się więcej niż jednego pojęcia na raz, oraz abstrakcyjne przykłady, które nie odnoszą się bezpośrednio do pracy użytkownika.
+  - Zdolności poznawcze są **wolniej zużywane**, kiedy pomagamy im czuć się stale mądrymi, silnymi i ciekawymi. Rozbijanie rzeczy na strawialne kawałki i myślenie o przepływie dokumentu może pomóc w utrzymaniu ich w tym stanie.
+- **Zawsze staramy się patrzeć z perspektywy użytkownika.** Kiedy coś dokładnie rozumiemy, staje się to dla nas oczywiste. Nazywa się to _klątwa wiedzy_. Aby napisać dobrą dokumentację, spróbuj zapamiętać, co najpierw musiałeś wiedzieć, ucząc się tego pojęcia. Jakiego żargonu musiałeś się nauczyć? Co źle zrozumiałeś? Co zajęło ci dużo czasu, aby naprawdę zrozumieć? Dobra dokumentacja spotyka użytkowników tam, gdzie są. Pomocne może być przećwiczenie wyjaśniania koncepcji ludziom osobiście, zanim
+- **Opisz najpierw _problem_, potem rozwiązanie.** Zanim pokażesz jak działa funkcja, ważne jest, aby wyjaśnić dlaczego istnieje. W przeciwnym razie użytkownicy nie będą mieli kontekstu, aby wiedzieć, czy ta informacja jest dla nich ważna (czy jest to problem, którego doświadczają?) lub z jaką wcześniejszą wiedzą/doświadczeniem ją połączyć.
+- **Pisząc, nie bój się zadawać pytań**, _szczególnie_ jeśli boisz się, że mogą być "głupi". Bycie bezbronnym jest trudne, ale tylko w ten sposób możemy pełniej zrozumieć, co musimy wyjaśnić.
+- **Bądź zaangażowany w dyskusje o funkcjach.** Najlepsze API pochodzą z rozwoju opartego na dokumentacji, gdzie budujemy funkcje, które są łatwe do wyjaśnienia, zamiast próbować dowiedzieć się jak je później wyjaśnić. Wcześniejsze zadawanie pytań (szczególnie "głupich" pytań) często pomaga ujawnić zamieszanie, niespójności i problematyczne zachowanie, zanim złamana zmiana będzie konieczna do ich naprawienia.
 
 ## Organization
 
