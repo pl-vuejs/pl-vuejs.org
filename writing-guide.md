@@ -31,66 +31,66 @@ Pisanie dokumentacji jest ćwiczeniem z empatii. Nie opisujemy obiektywnej rzecz
 
 ## Pisanie i gramatyka
 
-### Style
+### Styl
 
-- **Headings should describe problems**, not solutions. For example, a less effective heading might be "Using props", because it describes a solution. A better heading might be "Passing Data to Child Components with Props", because it provides the context of the problem props solve. Users won't really start paying attention to the explanation of a feature until they have some idea of why/when they'd use it.
-- **When you assume knowledge, declare it** at the beginning and link to resources for less common knowledge that you're expecting.
-- **Introduce only one new concept at a time whenever possible** (including both text and code examples). Even if many people are able to understand when you introduce more than one, there are also many who will become lost - and even those who don't become lost will have depleted more of their cognitive capacity.
-- **Avoid special content blocks for tips and caveats when possible.** It's generally preferable to blend these more naturally into the main content, e.g. by building on examples to demonstrate an edge case.
-- **Don't include more than two interwoven tips and caveats per page.** If you find that more than two tips are needed in a page, consider adding a caveats section to address these issues. The guide is meant to be read straight through, and tips and caveats can be overwhelming or distracting to someone trying to understand the base concepts.
-- **Avoid appeals to authority** (e.g. "you should do X, because that's a best practice" or "X is best because it gives you full separation of concerns"). Instead, demonstrate with examples the specific human problems caused and/or solved by a pattern.
-- **When deciding what to teach first, think of what knowledge will provide the best power/effort ratio.** That means teaching whatever will help users solve the greatest pains or greatest number of problems, with the relatively least effort to learn. This helps learners feel smart, powerful, and curious, so their cognitive capacity will drain more slowly.
-- **Unless the context assumes a string template or build system, only write code that works in any environment by the software (e.g. Vue, Vuex, etc).**
-- **Show, don't tell.** For example, "To use Vue on a page, you can add this to your HTML" (then show the script tag), instead of "To use Vue on a page, you can add a script element with a src attribute, the value of which should be a link to Vue's compiled source".
-- **Almost always avoid humor (for English docs)**, especially sarcasm and pop culture references, as it doesn't translate well across cultures.
-- **Never assume a more advanced context than you have to.**
-- **In most cases, prefer links between sections of the docs over repeating the same content in multiple sections.** Some repetition in content is unavoidable and even essential for learning. However, too much repetition also makes the docs more difficult to maintain, because a change in the API will require changes in many places and it's easy to miss something. This is a difficult balance to strike.
-- **Specific is better than generic.** For example, a `<BlogPost>` component example is better than `<ComponentA>`.
-- **Relatable is better than obscure.** For example, a `<BlogPost>` component example is better than `<CurrencyExchangeSettings>`.
-- **Be emotionally relevant.** Explanations and examples that relate to something people have experience with and care about will always be more effective.
-- **Always prefer simpler, plainer language over complex or jargony language.** For example:
-  - "you can use Vue with a script element" instead of "in order to initiate the usage of Vue, one possible option is to actually inject it via a script HTML element"
-  - "function that returns a function" instead of "higher order function"
-- **Avoid language that invalidate struggle**, such as "easy", "just", "obviously", etc. For reference, see [Words To Avoid in Educational Writing](https://css-tricks.com/words-avoid-educational-writing/).
+- **Nagłówki powinny opisywać problemy**, a nie rozwiązania. Na przykład, mniej efektywnym nagłówkiem może być "Użycie rekwizytów", ponieważ opisuje on rozwiązanie. Lepszym nagłówkiem może być "Przekazywanie danych do komponentów dziecięcych z rekwizytami", ponieważ podaje kontekst rozwiązania problemu z rekwizytami. Użytkownicy nie zaczną zwracać uwagi na wyjaśnienie danej funkcji, dopóki nie dowiedzą się, dlaczego i kiedy by jej użyli.
+- **Kiedy zakładasz wiedzę, zgłoś ją** na początku i połącz się z zasobami dla mniej powszechnej wiedzy, której oczekujesz.
+- **W miarę możliwości wprowadzaj tylko jedną nową koncepcję na raz** (włączając w to zarówno tekst, jak i przykłady kodu). Nawet jeśli wielu ludzi jest w stanie zrozumieć, gdy wprowadzisz więcej niż jedno, jest też wielu, którzy staną się zagubieni - i nawet ci, którzy się nie zgubią, wyczerpią więcej swoich zdolności poznawczych.
+- **Unikaj specjalnych bloków z treściami zawierającymi wskazówki i zastrzeżenia, jeśli to możliwe.** Ogólnie rzecz biorąc, lepiej jest połączyć je w bardziej naturalny sposób z główną treścią, np. opierając się na przykładach, aby pokazać skrajny przypadek.
+- **Nie należy umieszczać więcej niż dwóch przeplatających się końcówek i zastrzeżeń na stronie.** Jeśli okaże się, że na jednej stronie potrzebne są więcej niż dwie końcówki, należy rozważyć dodanie sekcji z zastrzeżeniami, aby rozwiązać te problemy. Przewodnik jest przeznaczony do przeczytania od razu, a wskazówki i zastrzeżenia mogą być przytłaczające lub rozpraszające dla kogoś, kto próbuje zrozumieć podstawowe pojęcia.
+- **Unikaj odwołań do autorytetu** (np. "powinieneś zrobić X, bo to jest najlepsza praktyka" lub "X jest najlepsze, bo daje Ci pełną separację obaw"). Zamiast tego pokaż na przykładach konkretne ludzkie problemy spowodowane i/lub rozwiązane za pomocą wzorca.
+- **Podejmując decyzję o tym, czego uczyć w pierwszej kolejności, zastanów się, jaka wiedza zapewni najlepszy stosunek siły do wysiłku.** Oznacza to nauczanie tego, co pomoże użytkownikom rozwiązać największe bóle lub największą liczbę problemów, przy stosunkowo najmniejszym wysiłku do nauki. Dzięki temu uczący się czują się inteligentni, silni i ciekawi, więc ich zdolności poznawcze będą wolniej odpływać.
+- **Bez względu na to, że kontekst zakłada szablon łańcucha lub system budowania, piszemy tylko kod, który działa w dowolnym środowisku przez oprogramowanie (np. Vue, Vuex, itp.).**
+- **Pokaż, nie mów.** Na przykład, "Aby użyć Vue na stronie, możesz dodać to do swojego kodu HTML" (następnie pokaż tag skryptu), zamiast "Aby użyć Vue na stronie, możesz dodać element skryptu z atrybutem src, którego wartość powinna być linkiem do skompilowanego źródła Vue".
+- **Zawsze unikaj humoru (dla angielskich docs)**, zwłaszcza sarkazmu i odniesień do popkultury, ponieważ nie przekłada się on dobrze na inne kultury.
+- **Nigdy nie zakładaj bardziej zaawansowanego kontekstu niż trzeba.**
+- **Większość przypadków preferuje linki pomiędzy sekcjami dokumentów niż powtarzanie tej samej treści w wielu sekcjach.** Niektóre powtórzenia treści są nieuniknione, a nawet niezbędne do nauki. Jednak zbyt duża ilość powtórzeń utrudnia również utrzymanie dokumentacji, ponieważ zmiana API będzie wymagała zmian w wielu miejscach i łatwo coś przeoczyć. Jest to trudna do osiągnięcia równowaga.
+- **Specyficzny jest lepszy niż ogólny.** Na przykład, `<BlogPost>` przykład komponentu jest lepszy niż `<ComponentA>`.
+- Na przykład, przykład komponentu `<BlogPost>` jest lepszy niż `<ComponentA>`.
+- **Bądź istotny emocjonalnie.** Wyjaśnienia i przykłady, które odnoszą się do czegoś, z czym ludzie mają doświadczenie i o co się troszczą będą zawsze bardziej skuteczne.
+- **Zawsze wolą prostszy, prosty język od skomplikowanego lub żargonowego.** Na przykład:
+  - "możesz użyć Vue z elementem skryptu" zamiast "aby zainicjować użycie Vue, jedną z możliwych opcji jest rzeczywiste wstrzyknięcie go za pomocą skryptowego elementu HTML".
+  - "funkcja, która zwraca funkcję" zamiast "funkcja wyższego rzędu".
+- **Unikaj języka, który unieważnia walkę** Więcej informacji na ten temat można znaleźć w książce [Słowa, których należy unikać w pisaniu edukacyjnym] (https://css-tricks.com/words-avoid-educational-writing/).
+  
+### Gramatyka
 
-### Grammar
+- **Unikaj skrótów** w pisaniu i przykładach kodu (np. `attribute` jest lepszy niż `attr`, `message` jest lepszy niż `msg`), chyba że specjalnie odnosisz się do skrótu w API (np. `$attrs`). Symbole skrótów zawarte na standardowych klawiaturach (np. `@`, `#`, `&`) są OK.
+- **Odwołując się do bezpośrednio następującego przykładu, użyj dwukropka (`:`), aby zakończyć zdanie**, a nie kropki (`.`).
+- **Użyj przecinka Oxford** (np. "a, b, i c" zamiast "a, b i c"). ![Dlaczego przecinek Oxford jest ważny](https://raw.githubusercontent.com/vuejs/vuejs.org/master/src/images/oxford-comma.jpg)
+- **Odwołując się do nazwy projektu, pierwszeństwo mają szersze konwencje języka angielskiego przed wewnętrznymi konwencjami brandingowymi tego projektu.** Na przykład, "webpack" i "npm" nie uwzględniają konwencji takich jak "zawsze zaczynać słowo na początku zdania dużą literą", "nazwy projektów zawsze używają tytułu Case", a "akronimy są zawsze pisane wielką literą". Zamiast tego, zawsze pisz "Webpack i NPM", aby zapewnić bardziej spójne doświadczenie w dokumentach i uniknąć zdań takich jak "Jeśli nie chcesz używać Vue CLI, możesz użyć webpack lub Rollup bezpośrednio, instalując je przez npm lub Yarn".
+- **Użyj tytułu Case dla nagłówków** - przynajmniej na razie, ponieważ jest to to to, czego używamy przez resztę docs. Istnieją badania sugerujące, że przypadek zdania (tylko pierwsze słowo nagłówka zaczyna się od dużej litery) jest w rzeczywistości lepszy pod względem czytelności, a także zmniejsza koszty poznawcze dla autorów dokumentacji, ponieważ nie muszą oni starać się zapamiętywać, czy kapitalizować słowa takie jak "i", "z" i "o".
+- **Nie używaj emojis (z wyjątkiem dyskusji).** Emojis są słodkie i przyjazne, ale mogą rozpraszać uwagę w dokumentacji, a niektóre emojis przekazują nawet różne znaczenia w różnych kulturach.
 
-- **Avoid abbreviations** in writing and code examples (e.g. `attribute` is better than `attr`, `message` is better than `msg`), unless you are specifically referencing an abbreviation in an API (e.g. `$attrs`). Abbreviation symbols included on standard keyboards (e.g. `@`, `#`, `&`) are OK.
-- **When referencing a directly following example, use a colon (`:`) to end a sentence**, rather than a period (`.`).
-- **Use the Oxford comma** (e.g. "a, b, and c" instead of "a, b and c"). ![Why the Oxford comma is important](https://raw.githubusercontent.com/vuejs/vuejs.org/master/src/images/oxford-comma.jpg)
-- **When referencing the name of a project, prioritize the broader conventions of English over internal branding conventions of that project.** For example, "webpack" and "npm" both disregard conventions such as "always start a word at the beginning of a sentence with a capital letter", "project names always use Title Case", and "acronyms are always capitalized". Instead, always write "Webpack and NPM" to provide a more consistent experience in the docs and avoid sentences like "If you don't want to use Vue CLI, you can use webpack or Rollup directly by installing them via npm or Yarn".
-- **Use Title Case for headings** - at least for now, since it's what we use through the rest of the docs. There's research suggesting that sentence case (only first word of the heading starts with a capital) is actually superior for legibility and also reduces the cognitive overhead for documentation writers, since they don't have to try to remember whether to capitalize words like "and", "with", and "about".
-- **Don't use emojis (except in discussions).** Emojis are cute and friendly, but they can be a distraction in documentation and some emoji even convey  different meanings in different cultures.
+## Iteracja i komunikacja
 
-## Iteration & Communication
+- **Wspaniale pochodzi z iteracji.** Pierwsze szkice są zawsze złe, ale pisanie ich jest bardzo ważne. Bardzo trudno jest uniknąć powolnego postępu Złego -> OK -> Dobrego -> Wielkiego -> Inspirującego -> Transcendentnego.
+- **Poczekaj tylko, aż coś będzie "Dobre" przed publikacją.** Społeczność pomoże ci zepchnąć to dalej w dół łańcucha.
+- **Spróbuj nie bronić się przed otrzymywaniem informacji zwrotnych.** Nasze pisanie może być dla nas bardzo osobiste, ale jeśli zdenerwujemy się ludźmi, którzy pomagają nam to poprawić, albo przestaną udzielać informacji zwrotnych, albo zaczną ograniczać ich rodzaj.
+- Jeśli pokażesz komuś pracę z dużą ilością błędów ortograficznych/gramatycznych, dostaniesz informację zwrotną o gramatyce/błędach w pisowni, a nie bardziej wartościowe notatki o tym, czy pisanie osiąga Twoje cele.
+- **Kiedy prosisz ludzi o informację zwrotną, powiedz recenzentom co:**
+  - **próbujesz zrobić**
+  - **Twoje obawy są**
+  - **równowaga, którą próbujesz osiągnąć**
+- **Kiedy ktoś zgłasza problem, prawie zawsze jest problem**, nawet jeśli rozwiązanie, które zaproponował, nie jest do końca właściwe. Zadawaj kolejne pytania, aby dowiedzieć się więcej.
+- Ludzie muszą czuć się bezpiecznie, zadając pytania podczas tworzenia i przeglądania treści. Oto jak można to zrobić:
+  - **Podziękuj ludziom za ich wkład/recenzje, nawet jeśli czujesz się zrzędliwy.** Na przykład:
+    - "Wspaniałe pytanie!"
+    - "Dzięki za poświęcenie czasu na wyjaśnienie. 🙂"
+    - "To jest rzeczywiście celowe, ale dziękuję za poświęcenie czasu na wniesienie wkładu. 😊"
+  - Posłuchaj, co ludzie mówią i odzwierciedlaj, jeśli nie jesteś pewien, czy dobrze rozumiesz.** To może pomóc w potwierdzeniu uczuć i doświadczeń ludzi, a także w zrozumieniu, czy *you're* rozumiesz *them* poprawnie.
+  - **Używaj dużo pozytywnego i empatycznego emojis.** Zawsze lepiej wydawać się trochę dziwnym niż złym czy niecierpliwym.**
+  - *Przejmij zasady/ograniczenia.** Jeśli ktoś zachowuje się w sposób obraźliwy/nieodpowiedni, zareaguj tylko życzliwie i dojrzale, ale również daj jasno do zrozumienia, że takie zachowanie jest niedopuszczalne i co się stanie (zgodnie z kodeksem postępowania), jeśli nadal będzie zachowywał się źle.
 
-- **Excellence comes from iteration.** First drafts are always bad, but writing them is a vital part of the process. It's extremely difficult to avoid the slow progression of Bad -> OK -> Good -> Great -> Inspiring -> Transcendent.
-- **Only wait until something is "Good" before publishing.** The community will help you push it further down the chain.
-- **Try not to get defensive when receiving feedback.** Our writing can be very personal to us, but if we get upset with the people who help us make it better, they will either stop giving feedback or start limiting the kind of feedback they give.
-- **Proof-read your own work before showing it to others.** If you show someone work with a lot of spelling/grammar mistakes, you'll get feedback about spelling grammar/mistakes instead of more valuable notes about whether the writing is achieving your goals.
-- **When you ask people for feedback, tell reviewers what:**
-  - **you're trying to do**
-  - **your fears are**
-  - **balances you're trying to strike**
-- **When someone reports a problem, there is almost always a problem**, even if the solution they proposed isn't quite right. Keep asking follow-up questions to learn more.
-- People need to feel safe asking questions when contributing/reviewing content. Here's how you can do that:
-  - **Thank people for their contributions/reviews, even if you're feeling grumpy.** For example:
-    - "Great question!"
-    - "Thanks for taking the time to explain. 🙂"
-    - "This is actually intentional, but thanks for taking the time to contribute. 😊"
-  - **Listen to what people are saying and mirror if you're not sure you're understanding correctly.** This can help validate people's feelings and experiences, while also understanding if *you're* understanding *them* correctly.
-  - **Use a lot of positive and empathetic emojis.** It's always better to seem a little strange than mean or impatient.
-  - **Kindly communicate rules/boundaries.** If someone behaves in a way that's abusive/inappropriate, respond only with kindness and maturity, but also make it clear that this behavior is not acceptable and what will happen (according to the code of conduct) if they continue behaving poorly.
-
-## Resources
+## Zasoby
 
 ### Software
 
-- [Grammarly](https://www.grammarly.com/): Desktop app and browser extension for checking spelling and grammar (though grammar checking doesn't catch everything and occasionally shows a false positive).
-- [Code Spell Checker](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker): An extension for VS Code to help you check spelling within markdown and code examples.
+- [Grammarly](https://www.grammarly.com/): Pulpitowa aplikacja i rozszerzenie przeglądarki do sprawdzania pisowni i gramatyki (chociaż sprawdzanie gramatyki nie wychwytuje wszystkiego i czasami pokazuje fałszywy wynik pozytywny).
+- [Code Spell Checker](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker): Rozszerzenie dla VS Code pomagające sprawdzać pisownię w ramach przykładów z markdown i kodu.
 
-### Books
+### Książki
 
-- [On Writing Well](https://www.amazon.com/Writing-Well-30th-Anniversary-Nonfiction-ebook/dp/B0090RVGW0) (see [popular quotes](https://www.goodreads.com/work/quotes/1139032-on-writing-well-the-classic-guide-to-writing-nonfiction))
-- [Bird by Bird](https://www.amazon.com/Bird-Some-Instructions-Writing-Life/dp/0385480016) (see [popular quotes](https://www.goodreads.com/work/quotes/841198-bird-by-bird-some-instructions-on-writing-and-life))
-- [Cognitive Load Theory](https://www.amazon.com/Cognitive-Explorations-Instructional-Performance-Technologies/dp/144198125X/)
+- [O studni pisarskiej](https://www.amazon.com/Writing-Well-30th-Anniversary-Nonfiction-ebook/dp/B0090RVGW0) (patrz [popularne cytaty](https://www.goodreads.com/work/quotes/1139032-on-writing-well-the-classic-guide-to-writing-nonfiction))
+- [Bird by Bird](https://www.amazon.com/Bird-Some-Instructions-Writing-Life/dp/0385480016) (patrz [popularne cytaty](https://www.goodreads.com/work/quotes/841198-bird-by-bird-some-instructions-on-writing-and-life))
+- [Teoria Obciążenia Poznawczego](https://www.amazon.com/Cognitive-Explorations-Instructional-Performance-Technologies/dp/144198125X/)
